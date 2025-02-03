@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "enhanced-keybinds",
+	"version": "${mod_version}",
+	"name": "Enhanced Keybinds",
+	"description": "A vanilla-friendly mod that allows you to assign multiple keys to a keybind, among other things!",
+	"authors": [
+		"CoolAid"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/enhanced-keybinds/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"coolaid.enhancedkeybinds.EnhancedKeybindsClient"
+		],
+		"modmenu": [
+			"coolaid.enhancedkeybinds.compat.modmenu.ModMenuImpl"
+		]
+	},
+	"mixins": [
+		"enhanced-keybinds.client.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

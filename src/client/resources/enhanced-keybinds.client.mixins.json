@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "coolaid.enhancedkeybinds.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"MixinKeyboard"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
