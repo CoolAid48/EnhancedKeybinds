@@ -25,6 +25,8 @@ public class EnhancedKeybindsClient implements ClientModInitializer {
 		LOGGER.info("The keys are binding...");
 		LOGGER.info("Check out my Hardcore World on Twitch!");
 
+		enhancedKeybindsConfig.register();
 		KeyInputHandler.register();
+		KeyInputHandler.registerKeyInputs();
 	}
 }

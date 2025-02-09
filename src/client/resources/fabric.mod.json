@@ -1,15 +1,16 @@
 {
 	"schemaVersion": 1,
 	"id": "enhanced-keybinds",
-	"version": "${mod_version}",
+	"version": "0.0.3",
 	"name": "Enhanced Keybinds",
-	"description": "A vanilla-friendly mod that allows you to assign multiple keys to a keybind, among other things!",
+	"description": "Assign multiple keys to a keybind, among other vanilla-friendly QOL features!",
 	"authors": [
 		"CoolAid"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://coolaid.live/",
+		"issues":   "https://github.com/CoolAid48/EnhancedKeybinds/issues",
+		"sources":  "https://github.com/CoolAid48/EnhancedKeybinds"
 	},
 	"license": "MIT",
 	"icon": "assets/enhanced-keybinds/icon.png",
@@ -33,5 +34,10 @@
 	},
 	"suggests": {
 		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"config_screen": "coolaid.enhancedkeybinds.configScreen"
+		}
 	}
 }

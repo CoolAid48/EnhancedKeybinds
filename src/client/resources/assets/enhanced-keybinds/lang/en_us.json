@@ -15,5 +15,8 @@
   "message.crouching.enabled": "Sneaking mode set to Toggle",
   "message.crouching.disabled": "Sneaking mode set to Hold",
   "message.sprinting.enabled": "Sprinting mode set to Toggle",
-  "message.sprinting.disabled": "Sprinting mode set to Hold"
+  "message.sprinting.disabled": "Sprinting mode set to Hold",
+
+  "text.autoconfig.enhanced-keybinds.title": "Enhanced Keybinds Config",
+  "text.autoconfig.enhanced-keybinds.option.enableKeybinds": "Add New Keybinds"
 }
