@@ -6,6 +6,7 @@
 
 ### Currently Includes:
 
++ Cloth Config Impl
 + Mod Menu Impl
 + MaliLib Impl
 
@@ -16,3 +17,5 @@
 - `Toggle Subtitles` Keybind
 
 - `Toggle Auto-Jump` Keybind
+
+- Keybind Configuration w/ Cloth Config
