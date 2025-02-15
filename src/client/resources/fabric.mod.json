@@ -1,33 +1,41 @@
 {
 	"schemaVersion": 1,
 	"id": "enhanced-keybinds",
-	"version": "0.0.3",
+	"version": "0.1.0",
 	"name": "Enhanced Keybinds",
-	"description": "Assign multiple keys to a keybind, among other vanilla-friendly QOL features!",
+	"description": "Assign multiple keys to a keybind, & other vanilla-friendly additions!",
 	"authors": [
-		"CoolAid"
+		"Aidan (CoolAid48)"
+	],
+	"contributors": [
+		"Mod icon by Taupestar",
+		"Heavily inspired by mikhailtapio",
+		"Config from magistermaks"
 	],
 	"contact": {
 		"homepage": "https://coolaid.live/",
-		"issues":   "https://github.com/CoolAid48/EnhancedKeybinds/issues",
-		"sources":  "https://github.com/CoolAid48/EnhancedKeybinds"
+		"issues": "https://github.com/CoolAid48/EnhancedKeybinds/issues",
+		"sources": "https://github.com/CoolAid48/EnhancedKeybinds"
 	},
 	"license": "MIT",
 	"icon": "assets/enhanced-keybinds/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"client": [
-			"coolaid.enhancedkeybinds.EnhancedKeybindsClient"
+			"me.coolaid.enhancedkeybinds.EnhancedKeybinds"
 		],
 		"modmenu": [
-			"coolaid.enhancedkeybinds.compat.modmenu.ModMenuImpl"
+			"me.coolaid.enhancedkeybinds.compat.ModMenu"
+		],
+		"controlling": [
+			"me.coolaid.enhancedkeybinds.compat.ModMenu"
 		]
 	},
 	"mixins": [
-		"enhanced-keybinds.client.mixins.json"
+		"enhanced-keybinds.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.9",
+		"fabricloader": ">=0.16.0",
 		"minecraft": "~1.21.4",
 		"java": ">=21",
 		"fabric-api": "*"
@@ -37,7 +45,11 @@
 	},
 	"custom": {
 		"modmenu": {
-			"config_screen": "coolaid.enhancedkeybinds.configScreen"
+			"links": {
+				"modmenu.discord": "https://discord.gg/J2SGshKNah",
+				"modmenu.modrinth": "https://modrinth.com/mod/enhanced-keybinds"
+			},
+			"config_screen": "coolaid.enhancedkeybinds.config.configScreen"
 		}
 	}
 }

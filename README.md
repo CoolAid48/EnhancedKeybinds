@@ -1,21 +1,24 @@
-## Assign multiple keys to a bind, & other vanilla-friendly additions!
+# CoolAid's Enhanced Keybinds
 
-### Currently in early dev-alpha. 
+## This mod is still marked as beta because I haven't been able to fully test anything. Please report bugs (and suggestions) [over on GitHub](https://github.com/CoolAid48/EnhancedKeybinds/issues)
 
-- Core functionality with multi-key logic using MaliLib keybind-system, is not currently implemented.
+#### Enhanced Keybinds allows you to assign a modifier key (alt, ctrl, shift) + another key to any vanilla keybind!
 
-### Currently Includes:
+This mod also adds new vanilla keybinds, such as those from the options menu:
 
-+ Cloth Config Impl
-+ Mod Menu Impl
-+ MaliLib Impl
+- `"Sneaking Mode"` Hotkey
 
-- `Sneaking Mode` Keybind
+- `"Sprinting Mode"` Hotkey
 
-- `Sprinting Mode` Keybind
+- `"Toggle Subtitles"` Hotkey
 
-- `Toggle Subtitles` Keybind
+- `"Toggle Auto-Jump"` Hotkey
 
-- `Toggle Auto-Jump` Keybind
+All keybinds are `unbound` by default, and you can completely disable these additional keybinds in the mod's config settings.
 
-- Keybind Configuration w/ Cloth Config
+- Compatible with ANY other mods that add to the vanilla keybinds system!
+- Compatible with [Controlling](https://modrinth.com/mod/controlling)
+- Requires [Fabric API](https://modrinth.com/mod/fabric-api)
+
+
+#### Heavily inspired by mikhailtapio's [Modern KeyBinding](https://modrinth.com/mod/modernkeybinding) mod
