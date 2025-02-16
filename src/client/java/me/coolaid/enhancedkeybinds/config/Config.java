@@ -246,4 +246,21 @@ public class Config {
         return request.file.delete();
     }
 
+    // Write method
+    public void set(String key, String value) {
+        config.put(key, value);
+        save();
+        LOGGER.info("Config value set: " + key + " = " + value);
+    }
+
+    private void save() {
+        try (PrintWriter writer = new PrintWriter(request.file, "UTF-8")) {
+            writer.println("# Enhanced Keybinds Config");
+            for (String key : config.keySet()) {
+                writer.println(key + "=" + config.get(key));
+            }
+        } catch (IOException e) {
+            LOGGER.error("Failed to save config file!", e);
+        }
+    }
 }

@@ -16,5 +16,9 @@
   "message.sprinting.disabled": "Sprinting mode set to Hold",
 
   "text.autoconfig.enhanced-keybinds.title": "Enhanced Keybinds Config",
-  "text.autoconfig.enhanced-keybinds.option.enableKeybinds": "Add New Keybinds"
+  "text.autoconfig.enhanced-keybinds.option.enableKeybinds": "Add New Keybinds",
+  "text.autoconfig.enhanced-keybinds.option.enableKeybinds.@Tooltip": "Disabling completely removes all new keybinds from the mod",
+  "text.autoconfig.enhanced-keybinds.option.nonConflictKeys": "Allow Multiple Hotkeys",
+  "text.autoconfig.enhanced-keybinds.option.nonConflictKeys.@Tooltip": "Ignores key conflicts, all hotkeys with the same keybind will activate when pressed"
+
 }

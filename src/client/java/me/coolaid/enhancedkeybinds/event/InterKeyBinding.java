@@ -1,6 +1,6 @@
 package me.coolaid.enhancedkeybinds.event;
 
-import me.coolaid.enhancedkeybinds.multiKey.multiKeyModifier;
+import me.coolaid.enhancedkeybinds.multikey.multiKeyModifier;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 

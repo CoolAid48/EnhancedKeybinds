@@ -1,4 +1,4 @@
-package me.coolaid.enhancedkeybinds.multiKey;
+package me.coolaid.enhancedkeybinds.multikey;
 
 import me.coolaid.enhancedkeybinds.event.InterKeyBinding;
 import net.fabricmc.loader.api.FabricLoader;
@@ -10,8 +10,8 @@ import java.nio.file.Path;
 import java.util.Objects;
 
 public class multiKeyBindingOptions {
-    private static final Path optParent = FabricLoader.getInstance().getConfigDir().resolve("mkb");
-    private static final Path optPath = optParent.resolve("keys-options.txt");
+    private static final Path optParent = FabricLoader.getInstance().getConfigDir().resolve("enhancedkeybinds");
+    private static final Path optPath = optParent.resolve("EK_options.txt");
 
     public static boolean isDirReady() {
         if (optParent.toFile().isDirectory()) return true;

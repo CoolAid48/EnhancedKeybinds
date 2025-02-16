@@ -1,8 +1,8 @@
 package me.coolaid.enhancedkeybinds.mixin;
 
 import me.coolaid.enhancedkeybinds.event.InterKeyBinding;
-import me.coolaid.enhancedkeybinds.multiKey.multiKeyBindingOptions;
-import me.coolaid.enhancedkeybinds.multiKey.multiKeyConflictContext;
+import me.coolaid.enhancedkeybinds.multikey.multiKeyBindingOptions;
+import me.coolaid.enhancedkeybinds.multikey.multiKeyConflictContext;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.GameOptions;
 import net.minecraft.client.option.KeyBinding;

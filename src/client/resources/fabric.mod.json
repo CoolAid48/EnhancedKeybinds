@@ -1,16 +1,16 @@
 {
 	"schemaVersion": 1,
 	"id": "enhanced-keybinds",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"name": "Enhanced Keybinds",
 	"description": "Assign multiple keys to a keybind, & other vanilla-friendly additions!",
 	"authors": [
-		"Aidan (CoolAid48)"
+		"Aidan (CoolAid48)\n",
+		"Heavily inspired by mikhailtapio's ''Modern Keybinding''"
 	],
 	"contributors": [
 		"Mod icon by Taupestar",
-		"Heavily inspired by mikhailtapio",
-		"Config from magistermaks"
+		"Config from magistermaks\n"
 	],
 	"contact": {
 		"homepage": "https://coolaid.live/",

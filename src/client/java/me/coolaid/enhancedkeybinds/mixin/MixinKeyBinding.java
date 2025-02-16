@@ -3,9 +3,10 @@ package me.coolaid.enhancedkeybinds.mixin;
 import me.coolaid.enhancedkeybinds.EnhancedKeybinds;
 import me.coolaid.enhancedkeybinds.event.InterKeyBinding;
 import me.coolaid.enhancedkeybinds.event.InterKeyConflictContext;
-import me.coolaid.enhancedkeybinds.multiKey.multiKeyBindingMap;
-import me.coolaid.enhancedkeybinds.multiKey.multiKeyConflictContext;
-import me.coolaid.enhancedkeybinds.multiKey.multiKeyModifier;
+import me.coolaid.enhancedkeybinds.multikey.multiKeyBindingMap;
+import me.coolaid.enhancedkeybinds.multikey.multiKeyConflictContext;
+import me.coolaid.enhancedkeybinds.multikey.multiKeyModifier;
+
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.option.StickyKeyBinding;
 import net.minecraft.client.util.InputUtil;
@@ -143,7 +144,7 @@ public abstract class MixinKeyBinding implements InterKeyBinding {
             cir.setReturnValue(true);
         } else if (getKey().equals(extended.getKey())) {
             // IN_GAME key contexts have a conflict when at least one modifier is NONE. // Other key contexts do not have this limitation.
-            // For example: If you hold shift to crouch, you can still press E to open your inventory. This means that a Shift+E hotkey is in conflict with E.
+            // For example: If you hold shift to crouch, you can still press E to open your inventory... so a Shift+E hotkey is in conflict with E.
             cir.setReturnValue(keyModifier == otherKeyModifier ||
                     (getKeyConflictContext().conflicts(multiKeyConflictContext.IN_GAME) &&
                             (keyModifier == multiKeyModifier.NONE || otherKeyModifier == multiKeyModifier.NONE)));

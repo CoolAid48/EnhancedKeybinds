@@ -1,4 +1,4 @@
-package me.coolaid.enhancedkeybinds.multiKey;
+package me.coolaid.enhancedkeybinds.multikey;
 
 import me.coolaid.enhancedkeybinds.event.InterKeyConflictContext;
 import net.minecraft.client.MinecraftClient;

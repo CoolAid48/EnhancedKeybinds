@@ -1,7 +1,7 @@
 package me.coolaid.enhancedkeybinds.mixin;
 
 import me.coolaid.enhancedkeybinds.event.InterKeyBinding;
-import me.coolaid.enhancedkeybinds.multiKey.multiKeyModifier;
+import me.coolaid.enhancedkeybinds.multikey.multiKeyModifier;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.option.ControlsListWidget;
 import net.minecraft.client.gui.screen.option.GameOptionsScreen;

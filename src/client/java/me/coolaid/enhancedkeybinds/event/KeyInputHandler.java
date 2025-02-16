@@ -1,6 +1,6 @@
 package me.coolaid.enhancedkeybinds.event;
 
-import me.coolaid.enhancedkeybinds.compat.ClothConfig.clothConfig;
+import me.coolaid.enhancedkeybinds.config.clothconfig.ClothConfig;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.option.KeyBinding;
@@ -125,7 +125,7 @@ public class KeyInputHandler {
     public static void register() {
 
         // Checks if keybinds are disabled in enhancedKeybindsConfig
-        if (!clothConfig.get().enableKeybinds) {
+        if (!ClothConfig.get().enableKeybinds) {
             System.out.println("Keybinds are disabled in the config.");
             return;
         }
