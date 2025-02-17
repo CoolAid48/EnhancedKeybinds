@@ -36,7 +36,20 @@ public interface InterKeyBinding {
 
     // Checks that both the key conflict context and modifier are active, and that the keyCode matches the binding.
     default boolean isActiveAndMatches(InputUtil.Key keyCode) {
-        return keyCode != InputUtil.UNKNOWN_KEY && keyCode.equals(getKey()) && getKeyConflictContext().isActive() && getKeyModifier().isActive(getKeyConflictContext());
+        boolean isModifierKey = multiKeyModifier.isKeyCodeModifier(keyCode);
+        boolean modifierCheck = getKeyModifier().isActive(getKeyConflictContext());
+
+        if (getKeyModifier() == multiKeyModifier.NONE && isModifierKey) {
+            // Bypass modifier check for standalone modifier keys
+            return keyCode != InputUtil.UNKNOWN_KEY
+                    && keyCode.equals(getKey())
+                    && getKeyConflictContext().isActive();
+        } else {
+            return keyCode != InputUtil.UNKNOWN_KEY
+                    && keyCode.equals(getKey())
+                    && getKeyConflictContext().isActive()
+                    && modifierCheck;
+        }
     }
 
     default void setToDefault() {

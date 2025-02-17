@@ -1,4 +1,4 @@
-package me.coolaid.enhancedkeybinds.config.clothconfig;
+package me.coolaid.enhancedkeybinds.config;
 
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.ConfigData;
@@ -15,10 +15,16 @@ public class ClothConfig implements ConfigData {
 
     @RequiresRestart
     @ConfigEntry.Gui.Tooltip(count = 1)
-    public boolean enableKeybinds = true;   // Toggles the new keybinds appearing
+    public boolean enableControlsBinds = true;         // Toggles the new options keybinds appearing
     @RequiresRestart
     @ConfigEntry.Gui.Tooltip(count = 1)
-    public boolean nonConflictKeys = false; // Toggle for non-conflicting keybinds
+    public boolean enableSkinBinds = true;             // Toggles the new skin keybinds appearing
+    @RequiresRestart
+    @ConfigEntry.Gui.Tooltip(count = 1)
+    public boolean enableIndividualSkinBinds = false;  // Toggles the individual skin keybinds appearing
+    @RequiresRestart
+    @ConfigEntry.Gui.Tooltip(count = 1)
+    public boolean nonConflictKeys = false;            // Toggle for non-conflicting keybinds
 
 
     public static void register() {

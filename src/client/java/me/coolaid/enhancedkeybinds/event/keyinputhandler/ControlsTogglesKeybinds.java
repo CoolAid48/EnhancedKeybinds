@@ -1,6 +1,6 @@
-package me.coolaid.enhancedkeybinds.event;
+package me.coolaid.enhancedkeybinds.event.keyinputhandler;
 
-import me.coolaid.enhancedkeybinds.config.clothconfig.ClothConfig;
+import me.coolaid.enhancedkeybinds.config.ClothConfig;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.option.KeyBinding;
@@ -9,7 +9,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import org.lwjgl.glfw.GLFW;
 
-public class KeyInputHandler {
+public class ControlsTogglesKeybinds {
 
     private static KeyBinding autoJumpToggleKey;
     private static KeyBinding crouchToggleKey;
@@ -124,9 +124,9 @@ public class KeyInputHandler {
     // REGISTER KEYBINDS
     public static void register() {
 
-        // Checks if keybinds are disabled in enhancedKeybindsConfig
-        if (!ClothConfig.get().enableKeybinds) {
-            System.out.println("Keybinds are disabled in the config.");
+        // Checks if keybinds are disabled in ClothConfig
+        if (!ClothConfig.get().enableControlsBinds) {
+            System.out.println("Options Keybinds are disabled in the config.");
             return;
         }
 

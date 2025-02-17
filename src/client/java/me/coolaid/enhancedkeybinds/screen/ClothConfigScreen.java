@@ -1,5 +1,6 @@
-package me.coolaid.enhancedkeybinds.config.clothconfig;
+package me.coolaid.enhancedkeybinds.screen;
 
+import me.coolaid.enhancedkeybinds.config.ClothConfig;
 import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.client.gui.screen.Screen;
 

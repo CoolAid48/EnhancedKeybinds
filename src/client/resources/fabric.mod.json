@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "enhanced-keybinds",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"name": "Enhanced Keybinds",
 	"description": "Assign multiple keys to a keybind, & other vanilla-friendly additions!",
 	"authors": [
@@ -35,7 +35,7 @@
 		"enhanced-keybinds.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.0",
+		"fabricloader": ">=0.16.9",
 		"minecraft": "~1.21.4",
 		"java": ">=21",
 		"fabric-api": "*"
