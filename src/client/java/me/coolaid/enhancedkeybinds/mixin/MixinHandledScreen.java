@@ -1,6 +1,7 @@
 package me.coolaid.enhancedkeybinds.mixin;
 
 import me.coolaid.enhancedkeybinds.event.InterKeyBinding;
+
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.option.KeyBinding;

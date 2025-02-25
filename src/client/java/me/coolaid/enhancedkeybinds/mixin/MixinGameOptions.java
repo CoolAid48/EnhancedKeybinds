@@ -3,10 +3,10 @@ package me.coolaid.enhancedkeybinds.mixin;
 import me.coolaid.enhancedkeybinds.event.InterKeyBinding;
 import me.coolaid.enhancedkeybinds.multikey.multiKeyBindingOptions;
 import me.coolaid.enhancedkeybinds.multikey.multiKeyConflictContext;
+
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.GameOptions;
 import net.minecraft.client.option.KeyBinding;
-
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -87,6 +87,19 @@ public abstract class MixinGameOptions {
         for (final KeyBinding binding : keyBindings)
             ((InterKeyBinding) binding).setKeyConflictContext(multiKeyConflictContext.IN_GAME);
     }
+
+    //@Redirect(method = "accept", at = @At(value = "INVOKE",
+    //        target = "Lnet/minecraft/client/option/GameOptions$Visitor;visitString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+    //        ordinal = 3))
+    //private String redirect$write$trap(GameOptions.Visitor instance, String s, String s) {
+    //    //Trap
+    //    return x;
+    //}
+
+    //@Redirect(method = "load", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/option/KeyBinding;setBoundKey(Lnet/minecraft/client/util/InputUtil$Key;)V"))
+    //private void redirect$load$trap(KeyBinding instance, InputUtil.Key boundKey) {
+    //    //Trap
+    //}
 
     @Inject(method = "write", at = @At("HEAD"))
     private void inject$write(CallbackInfo ci) {

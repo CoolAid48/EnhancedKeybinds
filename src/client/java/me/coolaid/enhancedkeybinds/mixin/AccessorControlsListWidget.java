@@ -5,7 +5,6 @@ import net.minecraft.client.gui.screen.option.KeybindsScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
-
 @Mixin(ControlsListWidget.class)
 public interface AccessorControlsListWidget {
     @Accessor

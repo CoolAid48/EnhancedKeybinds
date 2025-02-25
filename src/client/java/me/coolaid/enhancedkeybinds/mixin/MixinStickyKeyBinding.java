@@ -1,6 +1,7 @@
 package me.coolaid.enhancedkeybinds.mixin;
 
 import me.coolaid.enhancedkeybinds.event.InterKeyBinding;
+
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.option.StickyKeyBinding;
 import org.spongepowered.asm.mixin.Mixin;

@@ -5,14 +5,12 @@
 	"client": [
 		"AccessorControlsListWidget",
 		"AccessorScreen",
-		"AccessorStickyKeyBinding",
 		"MixinHandledScreen",
 		"MixinKeyBinding",
 		"MixinKeyBindingEntry",
 		"MixinKeybindsScreen",
 		"MixinKeyboard",
-		"MixinGameOptions",
-		"MixinStickyKeyBinding"
+		"MixinGameOptions"
 	],
 	"injectors": {
 		"defaultRequire": 1

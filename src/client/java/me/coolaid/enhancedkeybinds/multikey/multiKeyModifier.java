@@ -1,6 +1,7 @@
 package me.coolaid.enhancedkeybinds.multikey;
 
 import me.coolaid.enhancedkeybinds.event.InterKeyConflictContext;
+
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.util.InputUtil;

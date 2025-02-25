@@ -1,8 +1,8 @@
 package me.coolaid.enhancedkeybinds.compat;
 
 import com.blamejared.controlling.api.event.ControllingEvents;
-import me.coolaid.enhancedkeybinds.multikey.multiKeyModifier;
 import me.coolaid.enhancedkeybinds.event.InterKeyBinding;
+import me.coolaid.enhancedkeybinds.multikey.multiKeyModifier;
 
 public class Controlling {
     public static void init() {

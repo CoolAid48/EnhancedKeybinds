@@ -143,8 +143,9 @@ public abstract class MixinKeyBinding implements InterKeyBinding {
         if (keyModifier.matches(extended.getKey()) || otherKeyModifier.matches(getKey())) {
             cir.setReturnValue(true);
         } else if (getKey().equals(extended.getKey())) {
-            // IN_GAME key contexts have a conflict when at least one modifier is NONE. // Other key contexts do not have this limitation.
-            // For example: If you hold shift to crouch, you can still press E to open your inventory... so a Shift+E hotkey is in conflict with E.
+            // IN_GAME key contexts have a conflict when at least one modifier is NONE.
+            // For example: If you hold shift to crouch, you can still press E to open your inventory. This means that a Shift+E hotkey is in conflict with E.
+            // GUI and other key contexts do not have this limitation.
             cir.setReturnValue(keyModifier == otherKeyModifier ||
                     (getKeyConflictContext().conflicts(multiKeyConflictContext.IN_GAME) &&
                             (keyModifier == multiKeyModifier.NONE || otherKeyModifier == multiKeyModifier.NONE)));

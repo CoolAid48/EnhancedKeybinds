@@ -2,6 +2,7 @@ package me.coolaid.enhancedkeybinds.mixin;
 
 import me.coolaid.enhancedkeybinds.event.InterKeyBinding;
 import me.coolaid.enhancedkeybinds.multikey.multiKeyModifier;
+
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.option.ControlsListWidget;
 import net.minecraft.client.gui.screen.option.GameOptionsScreen;
@@ -48,10 +49,9 @@ public abstract class MixinKeybindsScreen extends GameOptionsScreen {
                 InputUtil.Key key = InputUtil.fromKeyCode(keyCode, scanCode);
                 extended.setKeyModifierAndCode(multiKeyModifier.getActiveModifier(), key);
                 selectedKeyBinding.setBoundKey(key);
-            } // Save changes
+            }
             if (!multiKeyModifier.isKeyCodeModifier(((InterKeyBinding) selectedKeyBinding).getKey())) selectedKeyBinding = null;
             this.lastKeyCodeUpdateTime = Util.getMeasuringTimeMs();
-            this.gameOptions.write();
             this.controlsList.update();
             cir.setReturnValue(true);
             return;

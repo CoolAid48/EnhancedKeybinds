@@ -44,6 +44,7 @@ dependencies {
 
 	modImplementation "com.terraformersmc:modmenu:13.0.1"
 	modImplementation 'me.shedaniel.cloth:cloth-config-fabric:17.0.144'
+	include 'me.shedaniel.cloth:cloth-config-fabric:17.0.144'
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
