@@ -3,14 +3,16 @@
 	"package": "me.coolaid.enhancedkeybinds.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-		"AccessorControlsListWidget",
 		"AccessorScreen",
+		"AccessorStickyKeyBinding",
+		"AccessorControlsListWidget",
+		"MixinGameOptions",
 		"MixinHandledScreen",
 		"MixinKeyBinding",
 		"MixinKeyBindingEntry",
 		"MixinKeybindsScreen",
 		"MixinKeyboard",
-		"MixinGameOptions"
+		"MixinStickyKeyBinding"
 	],
 	"injectors": {
 		"defaultRequire": 1

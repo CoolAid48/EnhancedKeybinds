@@ -1,14 +1,18 @@
 package me.coolaid.enhancedkeybinds;
 
 import me.coolaid.enhancedkeybinds.compat.Controlling;
-import me.coolaid.enhancedkeybinds.config.clothconfig.ClothConfig;
+import me.coolaid.enhancedkeybinds.config.ClothConfig;
 import me.coolaid.enhancedkeybinds.config.Config;
-import me.coolaid.enhancedkeybinds.event.KeyInputHandler;
+import me.coolaid.enhancedkeybinds.event.keyinputhandler.ControlsTogglesKeybinds;
+import me.coolaid.enhancedkeybinds.event.keyinputhandler.IndividualSkinTogglesKeybinds;
+import me.coolaid.enhancedkeybinds.event.keyinputhandler.BasicSkinTogglesKeybinds;
 import net.fabricmc.api.ClientModInitializer;
 
 import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.nio.file.Path;
 
 
 public class EnhancedKeybinds implements ClientModInitializer {
@@ -23,6 +27,9 @@ public class EnhancedKeybinds implements ClientModInitializer {
 	private static Config Config;
 	private static boolean nonConflictKeys;
 
+	public static final Path FOLDER_PATH = FabricLoader.getInstance().getConfigDir().resolve("enhancedkeybinds");
+
+
 	@Override
 	public void onInitializeClient() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -35,8 +42,10 @@ public class EnhancedKeybinds implements ClientModInitializer {
 
 		// Register configs and KeyInputHandler
 		ClothConfig.register();
-		KeyInputHandler.register();
-		KeyInputHandler.registerKeyInputs();
+		BasicSkinTogglesKeybinds.register();
+		IndividualSkinTogglesKeybinds.register();
+		ControlsTogglesKeybinds.register();
+		ControlsTogglesKeybinds.registerKeyInputs();
 
 		Config = Config.of("enhancedkeybinds-config").provider(path ->
 				"# Enhanced Keybinds Config" + "\n"
@@ -69,9 +78,7 @@ public class EnhancedKeybinds implements ClientModInitializer {
 		}
 	}
 
-	/**
-	 * Synchronizes the custom config with ClothConfig.
-	 */
+	// Syncs the custom config with ClothConfig.
 	private void syncCustomConfigWithCloth() {
 		String clothConfigValue = String.valueOf(ClothConfig.get().nonConflictKeys);
 		// Sync the value with the custom config file
@@ -79,10 +86,7 @@ public class EnhancedKeybinds implements ClientModInitializer {
 		LOGGER.info("Synchronized nonConflictKeys with custom config: " + clothConfigValue);
 	}
 
-	/**
-	 * Hook called when Cloth Config is saved.
-	 * This synchronizes the properties file with the updated Cloth Config values.
-	 */
+	// This syncs the properties file with the updated Cloth Config values.
 	public static void onClothConfigSaved() {
 		boolean clothConfigValue = ClothConfig.get().nonConflictKeys;
 
@@ -97,11 +101,12 @@ public class EnhancedKeybinds implements ClientModInitializer {
 		}
 	}
 
-	public static Config getConfig() {
+	public static Config getConfig () {
 		return Config;
 	}
 
-	public static boolean nonConflictKeys() {
+	public static boolean nonConflictKeys () {
 		return nonConflictKeys;
+
 	}
 }
