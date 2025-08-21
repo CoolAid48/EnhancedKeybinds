@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "enhanced-keybinds",
-	"version": "2.0.0-beta.1",
+	"version": "2.0.0",
 	"name": "Enhanced Keybinds",
 	"description": "Assign multiple keys to a keybind, & other vanilla-friendly additions! (Fork of Amecs Reborn)",
 	"authors": [
@@ -30,9 +30,12 @@
 		]
 	},
 	"accessWidener": "amecs.accesswidener",
-	"mixins": [
-		"amecs.mixins.json"
-	],
+  "mixins": [
+    {
+      "config": "amecs.mixins.json",
+      "refmap": "Enhanced Keybinds-refmap.json"
+    }
+  ],
 	"custom": {
 		"modmenu": {
 			"links": {
@@ -44,7 +47,7 @@
 	"depends": {
 		"fabricloader": ">=0.16.10",
 		"fabric-api": "*",
-		"minecraft": "~1.21.7"
+		"minecraft": "~1.21.5"
 	},
 	"conflicts": {
 		"nmuk": "<=1.0.999"
