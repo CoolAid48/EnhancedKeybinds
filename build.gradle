@@ -66,9 +66,9 @@ dependencies {
     include "com.moulberry:mixinconstraints:${property("mcon_version")}"
     include "wtf.cheeze:platformlanguageloader-fabric:${property("pll_version")}"
 
-    // ClothConfig
-    modImplementation 'me.shedaniel.cloth:cloth-config-fabric:18.0.145'
-    include 'me.shedaniel.cloth:cloth-config-fabric:18.0.145'
+    // ClothConfig 1.21.6
+    modImplementation 'me.shedaniel.cloth:cloth-config-fabric:19.0.147'
+    include 'me.shedaniel.cloth:cloth-config-fabric:19.0.147'
 }
 
 java {

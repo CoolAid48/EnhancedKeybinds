@@ -48,7 +48,7 @@
 	"depends": {
 		"fabricloader": ">=0.16.10",
 		"fabric-api": "*",
-		"minecraft": "1.21.5"
+		"minecraft": "~1.21.6"
 	},
 	"conflicts": {
 		"nmuk": "<=1.0.999"
