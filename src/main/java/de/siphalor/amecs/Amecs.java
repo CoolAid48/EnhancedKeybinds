@@ -67,7 +67,7 @@ public class Amecs implements ClientModInitializer {
             System.out.println("Skin Keybinds are disabled in the config.");
             return;
         } if (MetaOptions.get().escapeKeybind) {
-            ESCAPE_KEYBINDING = KeyBindingHelper.registerKeyBinding(new AmecsKeyBinding(Identifier.of(KEY_PREFIX, "alternative_escape"), InputUtil.Type.KEYSYM, -1, "key.categories.misc", new KeyModifiers()));
+            ESCAPE_KEYBINDING = KeyBindingHelper.registerKeyBinding(new AmecsKeyBinding(Identifier.of(KEY_PREFIX, "alternative_escape"), InputUtil.Type.KEYSYM, -1, "category.enhanced-keybinds.controls", new KeyModifiers()));
 
         }
     }

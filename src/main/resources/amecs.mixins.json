@@ -20,5 +20,5 @@
 		"defaultRequire": 1
 	},
 	"plugin": "com.moulberry.mixinconstraints.ConstraintsMixinPlugin",
-	"refmap": "Enhanced Keybinds-refmap.json"
+	"refmap": "enhanced-keybinds-refmap.json"
 }

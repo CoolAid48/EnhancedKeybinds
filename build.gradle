@@ -4,7 +4,7 @@ plugins {
 }
 
 group = property("maven_group")
-version = "${property("mod_version")}+mc${property("minecraft_version")}"
+version = "${property("mod_version")}"
 
 base {
     archivesName = property("mod_name")
@@ -69,7 +69,6 @@ dependencies {
     // ClothConfig
     modImplementation 'me.shedaniel.cloth:cloth-config-fabric:18.0.145'
     include 'me.shedaniel.cloth:cloth-config-fabric:18.0.145'
-
 }
 
 java {

@@ -44,7 +44,7 @@ public class BasicSkinTogglesKeybinds {
                     "key.enhanced-keybinds.fliphand",
                     InputUtil.Type.KEYSYM,
                     GLFW.GLFW_KEY_UNKNOWN,
-                    "category.enhanced-keybinds"
+                    "category.enhanced-keybinds.skin"
             );
             KeyBindingHelper.registerKeyBinding(keyBinding);
             ClientTickEvents.END_CLIENT_TICK.register(client -> {
@@ -71,7 +71,7 @@ public class BasicSkinTogglesKeybinds {
                     "key.enhanced-keybinds.toggleall",
                     InputUtil.Type.KEYSYM,
                     GLFW.GLFW_KEY_UNKNOWN,
-                    "category.enhanced-keybinds"
+                    "category.enhanced-keybinds.skin"
             );
             KeyBindingHelper.registerKeyBinding(keyBinding);
 

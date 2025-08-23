@@ -41,7 +41,7 @@ public class IndividualSkinTogglesKeybinds {
                         "key.enhanced-keybinds.togglebody." + p,
                         InputUtil.Type.KEYSYM,
                         GLFW.GLFW_KEY_UNKNOWN,
-                        "category.enhanced-keybinds"
+                        "category.enhanced-keybinds.skin"
                 );
                 KeyBindingHelper.registerKeyBinding(keyBinding);
 

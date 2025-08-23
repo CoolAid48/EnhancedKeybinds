@@ -148,25 +148,25 @@ public class ControlsTogglesKeybinds {
                 "key.enhanced-keybinds.auto-jump",  // Translation
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_UNKNOWN,
-                "category.enhanced-keybinds"    // Category
+                "category.enhanced-keybinds.controls"    // Category
         ));
         crouchToggleKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 "key.enhanced-keybinds.crouching",  // Translation
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_UNKNOWN,
-                "category.enhanced-keybinds"// Category
+                "category.enhanced-keybinds.controls"// Category
         ));
         sprintToggleKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 "key.enhanced-keybinds.sprinting",  // Translation
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_UNKNOWN,
-                "category.enhanced-keybinds"// Category
+                "category.enhanced-keybinds.controls"// Category
         ));
         subtitlesToggleKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 "key.enhanced-keybinds.subtitles",  // Translation
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_UNKNOWN,
-                "category.enhanced-keybinds"         // Category
+                "category.enhanced-keybinds.controls"         // Category
         ));
     }
 }
