@@ -1,4 +1,5 @@
-# CoolAid's Enhanced Keybinds
+ # <center> CoolAid's Enhanced Keybinds
+<center><img alt="Static Badge" src="https://img.shields.io/badge/Supports_MC_Versions-1.21.5_%7C_1.21.6_%7C_1.21.7_%7C_1.21.8-blue?style=for-the-badge"></center>
 
 ### Enhanced Keybinds allows you to assign a modifier key (alt, ctrl, shift, win) + another key on the keyboard to any vanilla keybind! This mod is a fork of Amecs and now works on versions 1.21.5+
 
